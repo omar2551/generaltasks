@@ -1,0 +1,36 @@
+#include <iostream>
+ 
+using namespace std;
+ 
+int main() {
+	
+		string str[6] , x ;
+		cout << "enter words" << endl ;
+		for (int y=0;y<6;++y){
+			getline (cin , str[y]);
+		}
+		for (int y=0;y<6;++y)
+			for (int z=y+1;z<6;++z){
+				
+				if (str[y]>str[z]){
+					x =str[y];
+					str[y]=str[z];
+					str[z]=x;
+				}
+				
+			}
+				cout << "alphabetical = "<< endl ;
+				for (int y=0; y<6;++y){
+					cout << str [y]<< endl;
+				}
+	
+	
+	
+	
+	
+	 
+	
+	
+	
+	return 0;
+}
